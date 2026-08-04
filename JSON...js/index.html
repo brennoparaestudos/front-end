@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <script>
+        let colabJSON = '{"colaboradores":[' + '{"nome":"Brenno","salario":1142.33,"idade":18}' + ']}' 
+        let colabOBJ = {"colaboradores":[{"nome":"Brenno","salario":1142.33,"idade":18}]}
+
+        let c_obj = JSON.parse(colabJSON) //transforma JSON em objetos literais
+        let c_json = JSON.stringify(colabOBJ) //transforma objetos literais em JSON
+
+        console.log(c_obj)
+        console.log('------------------------------')
+        console.log(c_json)
+    </script>
+</body>
+</html>
